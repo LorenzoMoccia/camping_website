@@ -1,0 +1,40 @@
+{% load static %}
+
+<head>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+
+{% block content %}
+<body>
+  <div class="my-form">
+      <h2>Prenota il Tuo Soggiorno</h2>
+      <form method="post">
+          {% csrf_token %}
+          <div class="form-group">
+              {{ form.name.label_tag }}
+              {{ form.name }}
+          </div>
+          <div class="form-group">
+              {{ form.surname.label_tag }}
+              {{ form.surname }}
+          </div>
+          <div class="form-group">
+              {{ form.check_in_date.label_tag }}
+              {{ form.check_in_date }}
+          </div>
+          <div class="form-group">
+              {{ form.check_out_date.label_tag }}
+              {{ form.check_out_date }}
+          </div>
+          <div class="form-group">
+              {{ form.number_people.label_tag }}
+              {{ form.number_people }}
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Prenota Ora</button>
+      </form>
+  </div>
+</body>
+{% endblock %}
