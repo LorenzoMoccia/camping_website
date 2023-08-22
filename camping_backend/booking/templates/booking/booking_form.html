@@ -1,40 +1,80 @@
 {% load static %}
 
+<!DOCTYPE html>
+<html>
 <head>
-    {% load bootstrap5 %}
-    {% bootstrap_css %}
-    {% bootstrap_javascript %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
-</head>
+    <title>Prenotazione Campeggio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+    <style>
+        /* Stilizza il form */
+        .reservation-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
 
-{% block content %}
+        /* Stilizza gli input */
+        .form-control {
+            margin-bottom: 10px;
+        }
+
+        /* Stilizza il pulsante di invio */
+        .submit-button {
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
 <body>
-  <div class="my-form">
-      <h2>Prenota il Tuo Soggiorno</h2>
-      <form method="post">
-          {% csrf_token %}
-          <div class="form-group">
-              {{ form.name.label_tag }}
-              {{ form.name }}
-          </div>
-          <div class="form-group">
-              {{ form.surname.label_tag }}
-              {{ form.surname }}
-          </div>
-          <div class="form-group">
-              {{ form.check_in_date.label_tag }}
-              {{ form.check_in_date }}
-          </div>
-          <div class="form-group">
-              {{ form.check_out_date.label_tag }}
-              {{ form.check_out_date }}
-          </div>
-          <div class="form-group">
-              {{ form.number_people.label_tag }}
-              {{ form.number_people }}
-          </div>
-          <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Prenota Ora</button>
-      </form>
-  </div>
+    <div class="container mt-5">
+        <h1 class="mb-4">Prenotazione Campeggio</h1>
+        <form class="reservation-form" method="post">
+            {% csrf_token %}
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="id_name" class="form-label">Nome</label>
+                    <input type="text" name="name" id="id_name" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="id_surname" class="form-label">Cognome</label>
+                    <input type="text" name="surname" id="id_surname" class="form-control" required>
+                </div>
+            </div>
+            
+            <div class="date-inputs">
+                <div>
+                    <label for="id_check_in_date" class="form-label">Data Check-in</label>
+                    <input type="date" name="check_in_date" id="id_check_in_date" class="form-control" required min="{{ today }}">
+                </div>
+                <div>
+                    <label for="id_check_out_date" class="form-label">Data Check-out</label>
+                    <input type="date" name="check_out_date" id="id_check_out_date" class="form-control" required min="{{ today }}">
+                </div>
+            </div>
+            
+            <label for="id_number_people" class="form-label">Numero Persone</label>
+            <select name="number_people" id="id_number_people" class="form-control" required>
+                <option value="1">1 persona</option>
+                <option value="2">2 persone</option>
+                <option value="3">3 persone</option>
+                <option value="4">4 persone</option>
+                <!-- Aggiungi altre opzioni se necessario -->
+            </select>
+
+            <button type="submit" class="btn btn-primary submit-button">Prenota</button>
+        </form>
+
+        <a href="{% url 'reservation_list' %}" class="btn btn-secondary view-button">Visualizza Prenotazioni</a>
+    </div>
+    <script>
+        var today = new Date().toISOString().split("T")[0];
+        document.getElementById("id_check_in_date").setAttribute("min", today);
+        document.getElementById("id_check_out_date").setAttribute("min", today);
+    </script>
 </body>
-{% endblock %}
+</html>

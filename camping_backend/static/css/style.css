@@ -1,37 +1,51 @@
-.my-form {
+/*-----------------
+    BOOKING FORM
+-----------------*/
+/* Stilizza il form */
+.reservation-form {
     max-width: 400px;
     margin: 0 auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.my-input {
-    padding: 12px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stilizza gli input */
+.form-control {
+    margin-bottom: 10px;
+}
+
+/* Stilizza il pulsante di invio */
+.submit-button {
+    display: block;
     width: 100%;
-    margin-bottom: 20px;
-    transition: border-color 0.2s ease-in-out;
 }
 
-.my-input:focus {
-    border-color: #3498db;
-    outline: none;
+/* Stilizza le etichette */
+.form-label {
+    font-weight: bold;
 }
 
-.btn-primary {
-    background-color: #3498db;
-    color: #ffffff;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    margin-top: 30px;
+/* Allinea le date sulla stessa riga */
+.date-inputs {
+    display: flex;
+    justify-content: space-between;
 }
 
-.btn-primary:hover {
-    background-color: #2980b9;
+/* Stilizza il pulsante per la visualizzazione delle prenotazioni */
+.view-button {
+    display: block;
+    margin-top: 10px;
+}
+
+
+.delete-button {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.delete-button i {
+    color: white;
 }
