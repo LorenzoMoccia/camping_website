@@ -1,0 +1,72 @@
+/*---------------
+     HEADER
+----------------*/
+.header-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+.links-container{
+    display: flex;
+    margin-left: 200px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-list{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    margin-left: 70px;
+}
+
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-icon-container{
+    display: flex;
+    margin-right: 100px;
+}
+
+.header-icon{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#whatsapp{
+    background-color: #25D366;
+    color: white;
+}
+
+#gmail{
+    background-color: #c71610;
+    color: white;
+}
+
+#logo{
+    background-color: orange;
+}

@@ -1,0 +1,80 @@
+@media only screen and (max-width: 480px) {
+
+    body{
+        max-width: 480px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .navbar-list{
+       display: none;
+    }
+
+    .logo-container{
+        position: absolute;
+        left: 10px;
+    }
+
+    .header-icon-container{
+        position: relative;
+        left: 90px;
+    }
+
+    .cards-container{
+        flex-direction: column;
+        justify-content: center;
+        top: 1130px;
+        left: 60px;
+    }
+
+    .cards{
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    .explore-section{
+        position: relative;
+        top: 800px;
+    }
+
+    .explore-cards-container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 45px;
+    }
+
+    .explore-section-title-container{
+        margin-left: 10px;
+    }
+
+    .contact-container{
+        position: absolute;
+        top: 4500px;
+        width: 95%;
+        left: 12px;
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .contact-text-container{
+        position: relative;
+        top: 300px;
+        right: 60px;
+    }
+
+    input{
+        width: 60%;
+    }
+
+    .camping-img{
+        position: relative;
+        bottom: 300px;
+        left: 50px;
+    }
+
+    footer{
+        display: none;
+    }
+
+}

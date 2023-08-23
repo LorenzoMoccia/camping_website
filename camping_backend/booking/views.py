@@ -6,6 +6,9 @@ from django.shortcuts import render, redirect
 from django.views.generic import ListView
 from django.views.generic.base import View
 
+def index(request):
+    return render(request, 'index.html')
+
 class ReservationFormView(FormView):
     form_class = ReservationForm
     template_name = 'booking/booking_form.html'

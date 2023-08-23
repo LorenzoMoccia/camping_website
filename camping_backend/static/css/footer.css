@@ -1,0 +1,39 @@
+footer{
+    background-color: #f9e1db;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+}
+
+.footer-container{
+    display: flex;
+    margin-top: 150px;
+}
+
+.footer-left-container{
+    width: 400px;
+    margin-top: 120px;
+    margin-left: 380px;
+}
+
+.footer-camp-desc{
+    margin-top: 15px;
+}
+
+.footer-right-container{
+    display: flex;
+    margin-top: 120px;
+    margin-left: 140px;
+}
+
+.footer-list{
+    list-style: none;
+}
+
+.list-title{
+    margin-bottom: 15px;
+}
+
+.copyright-container{
+    text-align: center;
+    margin-top: 50px;
+}

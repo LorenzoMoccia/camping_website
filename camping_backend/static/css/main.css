@@ -1,0 +1,140 @@
+.cards-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 80px;
+}
+
+.cards{
+    width: calc(60% / 4);
+    text-align: center;
+    background-color: white;
+    border-radius: 10%;
+    color: black;
+    margin-left: 25px;
+    padding: 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.cards:hover{
+    transition: 0.3s;
+    scale: 1.1;
+}
+
+.img-container{
+    margin-top: 10px;
+}
+
+.cards-img{
+    width: 100px;
+    height: 100px;
+}
+
+.card-text-container{
+    margin-top: 10px;
+}
+
+/*------------------
+    EXPLORE SECTION
+-------------------*/
+.explore-section{
+    padding-top: 300px;
+    text-align: center;
+}
+
+.explore-section-title-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.explore-cards-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.thumb-container{
+    width: 80%;
+    margin: auto;
+}
+
+.explore-img{
+    width: 100px;
+    height: 100px;
+}
+
+.explore-cards-img{
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.btn-view-all{
+    width: 150px;
+    margin-top: 70px;
+    border-radius: 10px;
+    border: 1px solid orange;
+    color: orange;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/*------------------
+    METTIAMOCI IN
+      CONTATTO
+      SECTION
+-------------------*/
+.contact-container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    margin-top: 60px;
+    border-radius: 15px;
+    background-color: #f9e1db;
+    box-shadow: 2px 2px 12px 2px #000000;
+}
+
+.contact-text-container{
+    width: 385px;
+    margin-top: 150px;
+    margin-left: 80px;
+}
+
+.input-container{
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+input{
+    border-style: none;
+    padding: 10px;
+    width: 20%;
+    outline: none;
+}
+
+
+.input-icon-container{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-right: 0px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-left: 5px;
+}
+
+.camping-img{
+    width: 300px;
+    height: 300px;
+    margin-right: 130px;
+    margin-top: 60px;
+}

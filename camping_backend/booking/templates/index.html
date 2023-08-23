@@ -1,0 +1,348 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------CSS-------->
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/hero.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media-queries.css' %}">
+    <!-------/CSS-------->
+    <!-------FONTAWESOME-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------/FONTAWESOME-------->
+    <!-------GOOGLE FONT--------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <!-------/GOOGLE FONT--------->
+    <title>Campeggio - Homepage</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <!----------HERO------------->
+        <section>
+        <div class="hero-image">
+        <header>
+            <!----------HEADER CONTAINER-------->
+            <div class="header-container">
+                <!------LINKS CONTAINER-------->  
+                <div class="links-container">  
+                <div class="logo-container" id="logo">
+                    <i class="fa-solid fa-campground fa-xl"></i>
+                </div>
+
+            <nav>
+                <ul class="navbar-list">
+                    <li>Home</li>
+                    <li>Attività</li>
+                    <li>Vicino a me</li>
+                    <li>Eventi</li>
+                    <li>Blog</li>
+                    <li>Gallery</li>
+                    <li>About</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            </nav>
+            <!------/LINKS CONTAINER-------->
+
+            <div class="header-icon-container">
+                <div class="header-icon" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                </div>
+
+                <div class="header-icon" id="gmail">
+                    <i class="fa-regular fa-envelope fa-2xl"></i>
+                </div>
+            </div>
+            </div>
+            <!----------/HEADER CONTAINER--------> 
+        </header>
+
+        <div class="hero-text">
+            <h1 class="hero-title">CAMPEGGIO SAN BARTOLOMEO</h1>
+            <p class="hero-p">Affacciato sul mare, nel verde della natura!</p>
+            <button class="hero-btn">PRENOTA ORA</button>
+          </div>
+        </div>
+    </div>
+    </section>
+    <!----------/HERO------------>
+
+    <!----------MAIN------------>
+    <main>
+        <!---------CARDS CONTAINER SECTION------>
+        <section>
+        <div class="cards-container">
+            <!--------------CARD---------->
+            <div class="cards">
+                <div class="img-container">
+                <img src="{% static 'img/ping-pong.png' %}" alt="" class="cards-img">
+                </div>
+
+                <div class="card-text-container">
+                    <h3>Ping Pong</h3>
+                    <p>Siamo dotati di un tavolo da Ping Pong completamente gratuito. Le racchette e le palline possono essere richieste in Reception senza alcun costo.</p>
+                </div>
+            </div>
+            <!--------------/CARD---------->
+
+            <!--------------CARD---------->
+            <div class="cards">
+                <div class="img-container">
+                <img src="{% static 'img/football-field.png' %}" alt="" class="cards-img">
+                </div>
+
+                <div class="card-text-container">
+                    <h3>Campo da Calcio</h3>
+                    <p>Abbiamo un campo da calcio ad 11, dove vengono spesso organizzate partite e tornei tra campeggiatori!</p>
+                </div>
+            </div>
+            <!--------------/CARD---------->
+
+            <!--------------CARD---------->
+            <div class="cards">
+                <div class="img-container">
+                <img src="{% static 'img/basketball.png' %}" alt="" class="cards-img">
+                </div>
+
+                <div class="card-text-container">
+                    <h3>Campo da Basket</h3>
+                    <p>Non poteva mancare anche un campo da Basket, dove si gioca in compagnia con gli altri campeggiatori!</p>
+                </div>
+            </div>
+            <!--------------/CARD---------->
+
+            <!--------------CARD---------->
+            <div class="cards">
+                <div class="img-container">
+                <img src="{% static 'img/fishing.png' %}" alt="" class="cards-img">
+                </div>
+
+                <div class="card-text-container">
+                    <h3>Pesca</h3>
+                    <p>Non sei un tipo da sport o movimento? All'esterno del campeggio c'è un grandissimo molo dove puoi rilassarti e gettare le tue esche in acqua! Orate, branzini, seppie e calamari ti aspettano!</p>
+                </div>
+            </div>
+            <!--------------/CARD---------->
+
+        </div>
+    </section>
+    <!---------/CARDS CONTAINER SECTION------>
+
+    <!---------EXPLORE DESTINATION SECTION------>
+    <section class="explore-section">
+        <img src="{% static 'img/explore.png' %}" alt="" class="explore-img">
+
+        <div class="explore-section-title-container">
+            <div class="explore-section-title">
+                <h1 class="explore-title">Esplora nei Dintorni</h1>
+            </div>
+        </div>
+
+        <!--------------EXPLORE FIRST ROW CARDS CONTAINER--------->
+        <div class="explore-cards-container">
+            <!-------CARD-------->
+            <div class="cards">
+                <div class="thumb-container">
+                    <img src="{% static 'img/trieste.jpg' %}" alt="" class="explore-cards-img">
+                </div>
+
+                <div class="card-text-container">
+                    <h3>Piazza Unità d'Italia</h3>
+                    <p>Piazza Unità d'Italia è la piazza principale di Trieste, situata ai piedi del colle di San Giusto, tra il Borgo Teresiano e Borgo Giuseppino.</p>
+                </div>
+            </div>
+            <!-------/CARD-------->
+
+            <!-------CARD-------->
+            <div class="cards">
+                <div class="thumb-container">
+                    <img src="{% static 'img/valrosandra.jpg' %}" alt="" class="explore-cards-img">
+                </div>
+
+                <div class="card-text-container">
+                    <h3>Riserva Naturale della Val Rosandra</h3>
+                    <p>Valle panoramica con arrampicate e speleologia. Un infinità di sentieri, tagliata dal fiume Rosandra lungo tutta la valle.</p>
+                </div>
+            </div>
+            <!-------/CARD-------->
+
+            <!-------CARD-------->
+            <div class="cards">
+                <div class="thumb-container">
+                    <img src="{% static 'img/castello.jpg' %}" alt="" class="explore-cards-img">
+                </div>
+
+                <div class="card-text-container">
+                    <h3>Castello di Muggia</h3>
+                    <p>Castello situato a Muggia, un paesino a 5 minuti dal nostro campeggio!</p>
+                </div>
+            </div>
+            <!-------/CARD-------->
+
+            <!-------CARD-------->
+            <div class="cards">
+                <div class="thumb-container">
+                    <img src="{% static 'img/risiera-san-sabba.jpg' %}" alt="" class="explore-cards-img">
+                </div>
+
+                <div class="card-text-container">
+                    <h3>Risiera di San Sabba</h3>
+                    <p>La Risiera di San Sabba è stato un campo di concentramento nazista, situato nella città di Trieste.</p>
+                </div>
+            </div>
+            <!-------/CARD-------->
+        </div>
+        <!--------------/EXPLORE FIRST ROW CARDS CONTAINER--------->
+
+        <!--------------EXPLORE SECOND ROW CARDS CONTAINER--------->
+        <div class="explore-cards-container">
+            <!-------CARD-------->
+            <div class="cards">
+                <div class="thumb-container">
+                    <img src="{% static 'img/laghetti.webp' %}" alt="" class="explore-cards-img">
+                </div>
+
+                <div class="card-text-container">
+                    <h3>Laghetti delle Noghere</h3>
+                    <p>Camminate nel mezzo del verde della natura, raggiungi a piedi o in bici questo fanstastico lago!</p>
+                </div>
+            </div>
+            <!-------/CARD-------->
+
+            <!-------CARD-------->
+            <div class="cards">
+                <div class="thumb-container">
+                    <img src="{% static 'img/porto-san-rocco.jpg' %}" alt="" class="explore-cards-img">
+                </div>
+
+                <div class="card-text-container">
+                    <h3>Porto San Rocco Marina</h3>
+                    <p>A Muggia, antico borgo marinaro vicinissimo a Trieste. Ospita moltissime barche e diversi YACHT.</p>
+                </div>
+            </div>
+            <!-------/CARD-------->
+
+            <!-------CARD-------->
+            <div class="cards">
+                <div class="thumb-container">
+                    <img src="{% static 'img/grotta-gigante.jpg' %}" alt="" class="explore-cards-img">
+                </div>
+
+                <div class="card-text-container">
+                    <h3>Grotta Gigante</h3>
+                    <p>Enorme grotta sotterranea con stalattiti e stalagmiti, centro turistico e visite guidate. Assolutamente da non perdere!</p>
+                </div>
+            </div>
+            <!-------/CARD-------->
+
+            <!-------CARD-------->
+            <div class="cards">
+                <div class="thumb-container">
+                    <img src="{% static 'img/castello-miramare.png' %}" alt="" class="explore-cards-img">
+                </div>
+
+                <div class="card-text-container">
+                    <h3>Castello di Miramare</h3>
+                    <p>L'edificio fu costruito tra il 1856 e il 1860 come dimora dell'arciduca Massimiliano d'Asburgo. A 10 minuti dalla stazione di Trieste.</p>
+                </div>
+            </div>
+            <!-------/CARD-------->
+        </div>
+        <!--------------/EXPLORE SECOND ROW CARDS CONTAINER--------->
+
+    <button class="btn-view-all">Vedi tutte</button>
+    </section>
+    <!---------/EXPLORE DESTINATION SECTION------>
+
+
+    <!---------METTIAMOCI IN CONTATTO------------>
+    <section>
+        <div class="contact-container">
+            <div class="contact-text-container">
+                <h1>Mettiamoci in Contatto</h1>
+                <p>Ricevi aiuto per il tuo viaggio, informazioni utili, storie da altri visitatori direttamente sulla tua mail!</p>
+                
+                <div class="input-container">
+                    <div class="input-icon-container">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+
+                    <input type="text" placeholder="Indirizzo Email">
+                </div>
+            </div>
+
+            <img src="{% static 'img/camping.png' %}" alt="" class="camping-img">
+        </div>
+    </section>
+    <!---------/METTIAMOCI IN CONTATTO------------>
+    </main>
+    <!----------/MAIN------------>
+
+    <!----------/FOOTER------------>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left-container">
+                <h4>NomeCampeggio e' il posto dove tutti vorrebbero campeggiare!</h4>
+                <p class="footer-camp-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officia magni molestiae aliquam impedit consequatur debitis, delectus eius ullam neque quia repudiandae vero maiores soluta? Ab odio vero quas qui.</p>
+            </div>
+
+            <div class="footer-right-container">
+                <!--------LINK COLUMN------->
+                <div class="column-container">
+                    <ul class="footer-list">
+                        <li class="list-title"><h4>Scopri di più</h4></li>
+                        <li>Link</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                    </ul>
+                </div> 
+                <!--------/LINK COLUMN------->
+
+                <!--------LINK COLUMN------->
+                <div class="column-container">
+                    <ul class="footer-list">
+                        <li class="list-title"><h4>Prenota la tua vacanza</h4></li>
+                        <li>Link</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                    </ul>
+                </div> 
+                <!--------/LINK COLUMN------->
+
+                <!--------LINK COLUMN------->
+                <div class="column-container">
+                    <ul class="footer-list">
+                        <li class="list-title"><h4>Aiuto & Utili</h4></li>
+                        <li>Link</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                    </ul>
+                </div> 
+                <!--------/LINK COLUMN------->
+            </div>
+
+        </div>
+        <div class="copyright-container">
+            <small>Developed by Lorenzo Moccia. © 2023. All rights reserved.</small>
+        </div>
+    </footer>
+    <!----------/FOOTER------------>
+</body>
+</html>
