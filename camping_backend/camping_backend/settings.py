@@ -130,11 +130,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #====DATABASE SETTINGS=====
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
+        "ENGINE": "django.db.backends.postgresql",
         "NAME": "camping_db",
         "USER": "root",
         "PASSWORD": "root",
         "HOST": "localhost",
-        "PORT": "3306",
+        "PORT": "5432",
     }
 }
