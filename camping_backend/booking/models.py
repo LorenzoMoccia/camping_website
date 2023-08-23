@@ -8,3 +8,7 @@ class Booking(models.Model):
     check_out_date = models.DateField()
     number_people = models.IntegerField()
 
+    def __str__(self):
+        return f"{self.name} {self.surname}"
+
+
