@@ -43,6 +43,14 @@
         .back-button {
             margin-top: 20px;
         }
+
+        .btn-danger{
+            background-color: red;
+            color: white;
+            border: none;
+            width: 100px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -62,7 +70,7 @@
                     <form method="post">
                         {% csrf_token %}
                         <input type="hidden" name="reservation_id" value="{{ reservation.id }}">
-                        <button type="submit" class="btn btn-danger">Cancella</button>
+                        <button type="submit" class="btn btn-danger"><b>Delete</b></button>
                     </form>
                 </div>
             </div>
