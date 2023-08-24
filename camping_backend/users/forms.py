@@ -36,4 +36,4 @@ class SignupForm(UserCreationForm):
 class CustomUserChangeForm(UserChangeForm):
     class Meta:
         model = Utente
-        fields = ('email', 'first_name', 'last_name', 'username',)
+        fields = ('email', 'first_name', 'last_name', )
