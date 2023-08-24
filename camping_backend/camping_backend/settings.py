@@ -40,9 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'booking',
     'bootstrap5',
+    "debug_toolbar",
 ]
 
 MIDDLEWARE = [
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -127,3 +129,10 @@ DATABASES = {
         "PORT": "5432",
     }
 }
+
+#===DEBUG TOOLBAR CONF====
+INTERNAL_IPS = [
+    "127.0.0.1",
+    "localhost",
+]
+
