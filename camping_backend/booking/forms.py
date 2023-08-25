@@ -2,9 +2,13 @@ from django import forms
 from .models import Booking
 
 class ReservationForm(forms.ModelForm):
+    # todo
+    # aggiungere che si colleghi a uno user
+    # user dovra prima registrarsi (anche sulla stessa pag in ajax) e così associamo prenotazione a user
+
     class Meta:
         model = Booking
-        fields = ['name', 'surname', 'check_in_date', 'check_out_date', 'number_people']
+        fields = ['check_in_date', 'check_out_date', 'number_people']
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
