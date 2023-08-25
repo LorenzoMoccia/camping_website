@@ -6,8 +6,10 @@ from django.shortcuts import render, redirect
 from django.views.generic import ListView
 from django.views.generic.base import View
 
+
 def index(request):
     return render(request, 'index.html')
+
 
 class ReservationFormView(FormView):
     form_class = ReservationForm
@@ -17,7 +19,8 @@ class ReservationFormView(FormView):
     def form_valid(self, form):
         form.save()
         return super().form_valid(form)
-    
+
+
 class ReservationListView(View):
     def get(self, request):
         reservations = Booking.objects.all()
@@ -29,6 +32,7 @@ class ReservationListView(View):
             reservation = Booking.objects.get(pk=reservation_id)
             reservation.delete()
         return redirect('reservation_list')
+
 
 class DeleteReservationView(View):
     def get(self, request, pk):

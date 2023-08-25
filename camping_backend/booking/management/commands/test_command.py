@@ -140,5 +140,4 @@ class Command(BaseCommand):
     help = 'Import Master Tables'
 
     def handle(self, *args, **options):
-
         print("ciao tommaso")
